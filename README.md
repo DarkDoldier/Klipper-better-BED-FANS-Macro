@@ -46,10 +46,12 @@ With the automation in place, the manual command to start the bedfanloop was rem
 
 2. Set up your fan accordingly - you should copy what you have had in your old bedfans.cfg.
 
-`[fan_generic BedFans]
+```
+[fan_generic BedFans]
 pin: # **PUT YOUR PIN HERE**
 cycle_time: 0.04
-kick_start_time: 0.25`
+kick_start_time: 0.25
+```
 
 3. Set your variables. Copy what you already had. However here are three new variables - the c at the end stands for control. It will be used after you reached the desired temp for me 50% and 20% worked great. The last variable is the temp it should hold i set it to 65C:
 
