@@ -53,12 +53,12 @@ kick_start_time: 0.25`
 
 3. Set your variables. Copy what you already had. However here are three new variables - the c at the end stands for control. It will be used after you reached the desired temp for me 50% and 20% worked great. The last variable is the temp it should hold i set it to 65C:
 
-`variable_threshold: 90        # If bed temp target is above this threshold, fans will be enabled. If temp is set to below this threshold, fans will be disabled.
-variable_fast: 0.8            # Fan speed once bed temp is reached  
-variable_slow: 0.3            # Fan speed while bed is heating
-variable_fast_c: 0.5          # Fan speed for chamber temp control once bed temp is reached  
-variable_slow_c: 0.2          # Fan speed for chamber temp control while bed is heating
-variable_chamber_target: 65       # Target chamber temperature to maintain`
+- variable_threshold: 90        # If bed temp target is above this threshold, fans will be enabled. If temp is set to below this threshold, fans will be disabled. 
+- variable_fast: 0.8            # Fan speed once bed temp is reached 
+- variable_slow: 0.3            # Fan speed while bed is heating 
+- variable_fast_c: 0.5          # Fan speed for chamber temp control once bed temp is reached 
+- variable_slow_c: 0.2          # Fan speed for chamber temp control while bed is heating 
+- variable_chamber_target: 65       # Target chamber temperature to maintain
 
 **Play with the settings. After you set it up you can test if it works by asking for the bed to heat up above the variable_threshold:. It should then, during the bed heating process, use the variable_slow and variable_fast. Once the bed is at temperature the chamber temperature control should kick in and the fans will switch to variable_slow_c and variable_fast_c to help maintain the chamber temperature more precisely**
 
